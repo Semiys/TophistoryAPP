@@ -7,7 +7,19 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">О проекте</string>
 
-    <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
+    <string name="menu_home">Карта</string>
+    <string name="menu_gallery">Улицы</string>
     <string name="menu_slideshow">О проекте</string>
+    <string name="TextView11">Название Приложения</string>
+    <string name="TextView22">Версия 1.0.0</string>
+    <string name="TextView33">Описание приложения...</string>
+    <string name="TextView44">Почта: Stroycom@gmail.com</string>
+    <string name="social_link_text">https://youtu.be/om7bMrBdrVg?si=DTOKFccIrhKZp9O1</string>
+    <string name="TextView66">Авторские права Yandex бла бла</string>
+    <string name="TextView77">конфиденциальность</string>
+    <string name="TextView88">Благодарности</string>
+    <string name="TextView99">О разработчиках</string>
+    <string name="TextView10">FAQ</string>
+    <string name="TextView111">Инструкция по абьюзу</string>
+    <string name="TextView112">История изменений или обновлений</string>
 </resources>

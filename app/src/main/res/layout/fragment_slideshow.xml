@@ -4,4 +4,117 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.slideshow.SlideshowFragment"/>
+    tools:context=".ui.slideshow.SlideshowFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--<ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_launcher" />-->
+
+            <!-- Версия приложения -->
+
+            <TextView
+                android:id="@+id/textViewAbout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/TextView11"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textViewAbout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="@string/TextView22" />
+
+            <!-- Описание приложения -->
+
+            <TextView
+                android:id="@+id/textViewAboutContact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="@string/TextView44" />
+
+            <TextView
+                android:id="@+id/textViewSocialLink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:clickable="true"
+                android:focusable="true"
+                android:linksClickable="true"
+                android:text="@string/social_link_text"
+                android:textColor="#FF0000" />
+
+            <TextView
+                android:id="@+id/textViewAboutCopyright"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="@string/TextView66" />
+
+            <TextView
+                android:id="@+id/textViewAboutTerms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="@string/TextView77" />
+
+            <TextView
+                android:id="@+id/textViewAboutAcknowledgements"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="@string/TextView88" />
+
+            <TextView
+                android:id="@+id/textViewAboutDevelopers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="@string/TextView99" />
+
+            <TextView
+                android:id="@+id/textViewAboutFaq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="@string/TextView10" />
+
+            <TextView
+                android:id="@+id/textViewAboutInstructions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="@string/TextView111" />
+
+            <TextView
+                android:id="@+id/textViewAboutChangelog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="@string/TextView112" />
+
+            <TextView
+                android:id="@+id/textViewAbout3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="@string/TextView33" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
