@@ -1,6 +1,8 @@
 package com.example.tophistoryapp.ui.gallery
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
+import android.os.Parcelable
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -10,14 +12,22 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.tophistoryapp.R
 import com.example.tophistoryapp.databinding.FragmentGalleryBinding
+import kotlinx.parcelize.Parcelize
 
-class GalleryFragment : Fragment() {
+
+class GalleryFragment : Fragment(), GalleryAdapter.OnItemClickListener {
 
     private var _binding: FragmentGalleryBinding? = null
     private val binding get() = _binding!!
     private lateinit var galleryAdapter: GalleryAdapter
-    private var yourFullItemList = listOf("Item 1", "Item 2", "Item 3") // Замените это вашим полным списком элементов
+    private var yourFullItemList = listOf(
+        GalleryAdapter.StreetItem("Улица Аблукова", "Description 1", R.drawable.image1),
+        GalleryAdapter.StreetItem("Item 2", "Description 2", R.drawable.image2),
+        GalleryAdapter.StreetItem("Item 3", "Description 3", R.drawable.image3),
+        GalleryAdapter.StreetItem("Item 4", "Description 4", R.drawable.image4),
+        GalleryAdapter.StreetItem("Item 5", "Description 5", R.drawable.image5)
 
+    )
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -28,6 +38,7 @@ class GalleryFragment : Fragment() {
 
         // Инициализация RecyclerView и его адаптера
         galleryAdapter = GalleryAdapter()
+        galleryAdapter.setOnItemClickListener(this)
         binding.recyclerView.layoutManager = LinearLayoutManager(context)
         binding.recyclerView.adapter = galleryAdapter
         galleryAdapter.setItems(yourFullItemList)
@@ -49,7 +60,7 @@ class GalleryFragment : Fragment() {
     }
 
     private fun performSearch(query: String) {
-        val filteredList = yourFullItemList.filter { it.contains(query, ignoreCase = true) }
+        val filteredList = yourFullItemList.filter { it.name.contains(query, ignoreCase = true) }
         galleryAdapter.setItems(filteredList)
     }
 
@@ -57,16 +68,32 @@ class GalleryFragment : Fragment() {
         super.onDestroyView()
         _binding = null
     }
+    override fun onItemClick(item: GalleryAdapter.StreetItem) {
+        // Здесь вы начинаете DetailActivity и передаете необходимые данные
+        val intent = Intent(context, DetailActivity::class.java).apply {
+            putExtra("ITEM_KEY", item)
+        }
+        startActivity(intent)
+    }
 }
 
 class GalleryAdapter : RecyclerView.Adapter<GalleryAdapter.ViewHolder>() {
 
-    private var items: List<String> = listOf()
+    private var items: List<StreetItem> = listOf()
+    private var listener: OnItemClickListener? = null
 
     @SuppressLint("NotifyDataSetChanged")
-    fun setItems(newItems: List<String>) {
+    fun setItems(newItems: List<StreetItem>) {
         items = newItems
         notifyDataSetChanged()
+    }
+
+    fun setOnItemClickListener(listener: OnItemClickListener) {
+        this.listener = listener
+    }
+
+    interface OnItemClickListener {
+        fun onItemClick(item: StreetItem)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -75,16 +102,24 @@ class GalleryAdapter : RecyclerView.Adapter<GalleryAdapter.ViewHolder>() {
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.bind(items[position])
+        holder.bind(items[position],listener)
     }
 
     override fun getItemCount() = items.size
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        fun bind(item: String) {
-            // Пример привязки текста к TextView в вашем item_gallery.xml
-            // Предположим, что у вас есть TextView с id textViewItem
-            itemView.findViewById<TextView>(R.id.textViewItem).text = item
+        fun bind(item: StreetItem, listener: OnItemClickListener?) {
+            itemView.findViewById<TextView>(R.id.textViewItem).text = item.name
+            itemView.setOnClickListener {
+                listener?.onItemClick(item)
+            }
         }
     }
+    @Parcelize
+    data class StreetItem(
+        val name: String,
+        val description: String,
+        val imageResId: Int
+    ) : Parcelable
+
 }

@@ -12,6 +12,7 @@ import com.yandex.mapkit.MapKitFactory
 import com.yandex.mapkit.geometry.Point
 import com.yandex.mapkit.map.CameraPosition
 
+@Suppress("DEPRECATION")
 class HomeFragment : Fragment() {
 
     private var _binding: FragmentHomeBinding? = null
@@ -32,7 +33,7 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
 
-            ViewModelProvider(this).get(HomeViewModel::class.java)
+        ViewModelProvider(this)[HomeViewModel::class.java]
 
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val root: View = binding.root
@@ -43,7 +44,7 @@ class HomeFragment : Fragment() {
             // Иначе устанавливаем начальную позицию камеры
             binding.mapview.map.move(
                 CameraPosition(Point(54.351655, 48.389395), 16.0f, 0.0f, 0.0f),
-                Animation(Animation.Type.SMOOTH, 25f),
+                Animation(Animation.Type.SMOOTH, 2.5f),
                 null
             )
         }

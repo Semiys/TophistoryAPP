@@ -6,6 +6,10 @@ plugins {
 android {
     namespace 'com.example.tophistoryapp'
     compileSdk 34
+    viewBinding {
+        enabled = true
+    }
+
 
     defaultConfig {
         applicationId "com.example.tophistoryapp"
@@ -49,4 +53,5 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
     implementation 'com.yandex.android:maps.mobile:4.5.1-lite'
+    apply plugin: 'kotlin-parcelize'
 }
