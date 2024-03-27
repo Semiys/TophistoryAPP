@@ -20,21 +20,25 @@ class GalleryFragment : Fragment(), GalleryAdapter.OnItemClickListener {
     private var _binding: FragmentGalleryBinding? = null
     private val binding get() = _binding!!
     private lateinit var galleryAdapter: GalleryAdapter
-    private var yourFullItemList = listOf(
-        GalleryAdapter.StreetItem("Улица Аблукова", "Description 1", R.drawable.image1),
-        GalleryAdapter.StreetItem("Item 2", "Description 2", R.drawable.image2),
-        GalleryAdapter.StreetItem("Item 3", "Description 3", R.drawable.image3),
-        GalleryAdapter.StreetItem("Item 4", "Description 4", R.drawable.image4),
-        GalleryAdapter.StreetItem("Item 5", "Description 5", R.drawable.image5)
+    private lateinit var yourFullItemList: List<GalleryAdapter.StreetItem>
 
-    )
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
         _binding = FragmentGalleryBinding.inflate(inflater, container, false)
-        val root: View = binding.root
+        return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        // Инициализация списка элементов с использованием getString()
+        yourFullItemList = listOf(
+            GalleryAdapter.StreetItem("Улица Аблукова", getString(R.string.ablukov), R.drawable.image1),
+            // ... добавьте остальные элементы
+        )
 
         // Инициализация RecyclerView и его адаптера
         galleryAdapter = GalleryAdapter()
@@ -55,8 +59,6 @@ class GalleryFragment : Fragment(), GalleryAdapter.OnItemClickListener {
                 return true
             }
         })
-
-        return root
     }
 
     private fun performSearch(query: String) {
@@ -68,15 +70,16 @@ class GalleryFragment : Fragment(), GalleryAdapter.OnItemClickListener {
         super.onDestroyView()
         _binding = null
     }
+
     override fun onItemClick(item: GalleryAdapter.StreetItem) {
-        // Здесь вы начинаете DetailActivity и передаете необходимые данные
+        // Обработка нажатия на элемент
         val intent = Intent(context, DetailActivity::class.java).apply {
             putExtra("ITEM_KEY", item)
         }
         startActivity(intent)
     }
+    // ... класс GalleryAdapter без изменений
 }
-
 class GalleryAdapter : RecyclerView.Adapter<GalleryAdapter.ViewHolder>() {
 
     private var items: List<StreetItem> = listOf()
