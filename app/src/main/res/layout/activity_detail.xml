@@ -1,25 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:paddingLeft="3dp"
+    android:paddingRight="3dp"
+    android:background="@drawable/gsdgsdg"> <!-- Пример цвета фона -->
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:scaleType="centerCrop" />
-
-    <TextView
-        android:id="@+id/detailTextView"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/imageView"
-        android:textSize="20sp" />
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp">
 
-    <TextView
-        android:id="@+id/descriptionTextView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/detailTextView"
-        android:textSize="16sp" />
-</RelativeLayout>
+        <!-- Кнопка закрытия в правом верхнем углу -->
+        <ImageButton
+            android:id="@+id/closeButton"
+            android:layout_width="38dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="@string/close"
+            android:src="@drawable/ic_close" />
+
+        <!-- Первый TextView расположен непосредственно под кнопкой закрытия -->
+        <TextView
+            android:id="@+id/detailTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/closeButton"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp" />
+
+        <!-- ImageView расположен ниже первого TextView -->
+
+        <!-- Второй TextView расположен ниже ImageView -->
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="297dp"
+            android:layout_height="383dp"
+            android:layout_below="@id/detailTextView"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginEnd="62dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/descriptionTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView"
+            android:layout_marginTop="14dp"
+            android:textSize="16sp" />
+
+        <!-- Другие элементы -->
+
+    </RelativeLayout>
+</ScrollView>

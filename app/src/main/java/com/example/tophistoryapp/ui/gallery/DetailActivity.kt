@@ -2,6 +2,7 @@ package com.example.tophistoryapp.ui.gallery
 
 import android.annotation.SuppressLint
 import android.os.Bundle
+import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -22,6 +23,9 @@ class DetailActivity : AppCompatActivity() {
             findViewById<TextView>(R.id.detailTextView).text = it.name
             findViewById<TextView>(R.id.descriptionTextView).text = it.description
             findViewById<ImageView>(R.id.imageView).setImageResource(it.imageResId)
+        }
+        findViewById<ImageButton>(R.id.closeButton).setOnClickListener {
+            finish() // Закрыть текущую активность
         }
 
 

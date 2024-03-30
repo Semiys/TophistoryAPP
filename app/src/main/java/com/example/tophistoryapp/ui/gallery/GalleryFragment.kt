@@ -36,7 +36,8 @@ class GalleryFragment : Fragment(), GalleryAdapter.OnItemClickListener {
 
         // Инициализация списка элементов с использованием getString()
         yourFullItemList = listOf(
-            GalleryAdapter.StreetItem("Улица Аблукова", getString(R.string.ablukov), R.drawable.image1),
+            GalleryAdapter.StreetItem("Улица Аблукова", getString(R.string.ablukov), R.drawable.ablukov),
+            GalleryAdapter.StreetItem("Misha Abobus", getString(R.string.ablukov), R.drawable.image2)
             // ... добавьте остальные элементы
         )
 
