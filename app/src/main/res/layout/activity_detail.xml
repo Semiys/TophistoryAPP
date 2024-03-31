@@ -13,25 +13,10 @@
         android:paddingRight="3dp">
 
         <!-- Кнопка закрытия в правом верхнем углу -->
-        <ImageButton
-            android:id="@+id/closeButton"
-            android:layout_width="38dp"
-            android:layout_height="30dp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginTop="14dp"
-            android:layout_marginEnd="16dp"
-            android:contentDescription="@string/close"
-            android:src="@drawable/ic_close" />
+
 
         <!-- Первый TextView расположен непосредственно под кнопкой закрытия -->
-        <TextView
-            android:id="@+id/detailTextView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/closeButton"
-            android:layout_marginTop="20dp"
-            android:textSize="20sp" />
+
 
         <!-- ImageView расположен ниже первого TextView -->
 
@@ -41,7 +26,6 @@
             android:id="@+id/imageView"
             android:layout_width="297dp"
             android:layout_height="383dp"
-            android:layout_below="@id/detailTextView"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
             android:layout_marginStart="43dp"

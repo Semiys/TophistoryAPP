@@ -22,4 +22,9 @@
         android:name="com.example.tophistoryapp.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/nav_fourth_tab"
+        android:name="com.example.tophistoryapp.ui.fouthtab.FourthTabFragment"
+        android:label="@string/formagoogle"
+        tools:layout="@layout/fragment_fourth_tab" />
 </navigation>
