@@ -10,13 +10,18 @@ import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
+import com.example.tophistoryapp.R
 import com.example.tophistoryapp.databinding.FragmentHomeBinding
 import com.yandex.mapkit.Animation
 import com.yandex.mapkit.MapKitFactory
 import com.yandex.mapkit.geometry.Point
+import com.yandex.mapkit.location.LocationListener
+import com.yandex.mapkit.location.LocationManager
+import com.yandex.mapkit.location.LocationStatus
 import com.yandex.mapkit.map.CameraPosition
+import com.yandex.mapkit.map.MapObjectCollection
 import com.yandex.mapkit.mapview.MapView
+import com.yandex.runtime.image.ImageProvider
 
 @Suppress("DEPRECATION")
 class HomeFragment : Fragment() {
@@ -25,11 +30,15 @@ class HomeFragment : Fragment() {
     private val binding get() = _binding!!
     private var cameraPosition: CameraPosition? = null
     private var mapView: MapView? = null
+    private lateinit var locationManager: LocationManager
+    private var mapObjects: MapObjectCollection? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         MapKitFactory.setApiKey("b24e54ca-8c0c-4986-a17a-091f18cbe011")
         MapKitFactory.initialize(requireContext())
+        locationManager = MapKitFactory.getInstance().createLocationManager()
+
     }
 
     override fun onCreateView(
@@ -40,7 +49,9 @@ class HomeFragment : Fragment() {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
+
         mapView = binding.mapview
+        mapObjects = mapView?.map?.mapObjects?.addCollection()
 
         binding.buttonLocation.setOnClickListener {
             checkLocationPermission()
@@ -66,15 +77,41 @@ class HomeFragment : Fragment() {
     }
 
     private fun moveToUserLocation() {
-        mapView?.let { mapView ->
-            mapView.map.move(
-                CameraPosition(Point(54.351655, 48.389395), 16.0f, 0.0f, 0.0f),
-                Animation(Animation.Type.SMOOTH, 2.5f),
-                null
-            )
+        if (ContextCompat.checkSelfPermission(
+                requireContext(),
+                Manifest.permission.ACCESS_FINE_LOCATION
+            ) == PackageManager.PERMISSION_GRANTED
+        ) {
+            locationManager.requestSingleUpdate(object : LocationListener {
+                override fun onLocationUpdated(location: com.yandex.mapkit.location.Location) {
+                    mapView?.map?.move(
+                        CameraPosition(Point(location.position.latitude, location.position.longitude), 16.0f, 0.0f, 0.0f),
+                        Animation(Animation.Type.SMOOTH, 2.5f),
+                        null
+
+                    )
+                    mapObjects?.clear()
+                    val userLocation = Point(location.position.latitude, location.position.longitude)
+                    val placemark = mapObjects?.addPlacemark(userLocation)
+                     // Если вам не нужно изменять прозрачность метки, эту строку можно удалить
+                    placemark?.setIcon(ImageProvider.fromResource(requireContext(), R.drawable.zggheal))
+                    mapView?.map?.move(
+                        CameraPosition(userLocation, 16.0f, 0.0f, 0.0f),
+                        Animation(Animation.Type.SMOOTH, 2.5f),
+                        null
+                    )
+                }
+
+                override fun onLocationStatusUpdated(status: LocationStatus) {
+                    if (status == LocationStatus.NOT_AVAILABLE) {
+                        Toast.makeText(requireContext(), "Location is not available", Toast.LENGTH_SHORT).show()
+                    }
+                }
+            })
         }
     }
 
+    @Deprecated("Deprecated in Java")
     override fun onRequestPermissionsResult(
         requestCode: Int,
         permissions: Array<out String>,
@@ -127,4 +164,7 @@ class HomeFragment : Fragment() {
     companion object {
         const val LOCATION_PERMISSION_REQUEST_CODE = 1001
     }
+
+
+
 }
