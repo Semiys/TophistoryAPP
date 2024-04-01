@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.appcompat.widget.SearchView
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -37,7 +38,18 @@ class GalleryFragment : Fragment(), GalleryAdapter.OnItemClickListener {
         // Инициализация списка элементов с использованием getString()
         yourFullItemList = listOf(
             GalleryAdapter.StreetItem("Улица Аблукова", getString(R.string.ablukov), R.drawable.ablukov),
-            GalleryAdapter.StreetItem("Misha Abobus", getString(R.string.ablukov), R.drawable.image2)
+            GalleryAdapter.StreetItem("Улица Алашеева", getString(R.string.ash), R.drawable.image2),
+            GalleryAdapter.StreetItem("Улица Гастелло", getString(R.string.gast), R.drawable.image2),
+            GalleryAdapter.StreetItem("Улица Герасимова", getString(R.string.ger), R.drawable.image2),
+            GalleryAdapter.StreetItem("Улица Доватора", getString(R.string.Dov), R.drawable.image2),
+            GalleryAdapter.StreetItem("Улица Мельникова", getString(R.string.mel), R.drawable.image2),
+            GalleryAdapter.StreetItem("Улица Панфиловцев", getString(R.string.pan), R.drawable.image2),
+            GalleryAdapter.StreetItem("Улица Полбина", getString(R.string.pol), R.drawable.image2),
+            GalleryAdapter.StreetItem("Улица Прокофьева", getString(R.string.prok), R.drawable.image2),
+            GalleryAdapter.StreetItem("Улица Хваткова", getString(R.string.hvat), R.drawable.image2),
+            GalleryAdapter.StreetItem("Улица Черняховского", getString(R.string.cher), R.drawable.image2),
+            GalleryAdapter.StreetItem("Улица Шигаева", getString(R.string.shig), R.drawable.image2),
+            GalleryAdapter.StreetItem("Улица Аблукова", getString(R.string.ablukov), R.drawable.image2)
             // ... добавьте остальные элементы
         )
 
@@ -49,7 +61,7 @@ class GalleryFragment : Fragment(), GalleryAdapter.OnItemClickListener {
         galleryAdapter.setItems(yourFullItemList)
 
         // Настройка SearchView
-        binding.searchView.setOnQueryTextListener(object : androidx.appcompat.widget.SearchView.OnQueryTextListener {
+        binding.searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
             override fun onQueryTextSubmit(query: String?): Boolean {
                 query?.let { performSearch(it) }
                 return true
