@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.tophistoryapp.R
 import com.example.tophistoryapp.databinding.FragmentGalleryBinding
 import kotlinx.parcelize.Parcelize
+import androidx.recyclerview.widget.DividerItemDecoration
 
 
 class GalleryFragment : Fragment(), GalleryAdapter.OnItemClickListener {
