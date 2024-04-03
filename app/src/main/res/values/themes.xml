@@ -22,4 +22,9 @@
     <style name="Theme.TophistoryAPP.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.TophistoryAPP.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="Theme.TophistoryAPP.SplashScreen" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/white</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/spa</item>
+        <item name="postSplashScreenTheme">@style/Theme.TophistoryAPP.NoActionBar</item>
+    </style>
 </resources>
