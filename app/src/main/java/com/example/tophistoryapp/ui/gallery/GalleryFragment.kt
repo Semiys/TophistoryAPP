@@ -61,6 +61,9 @@ class GalleryFragment : Fragment(), GalleryAdapter.OnItemClickListener {
         binding.recyclerView.adapter = galleryAdapter
         galleryAdapter.setItems(yourFullItemList)
 
+        val dividerItemDecoration = DividerItemDecoration(binding.recyclerView.context, LinearLayoutManager.VERTICAL)
+        binding.recyclerView.addItemDecoration(dividerItemDecoration)
+
         // Настройка SearchView
         binding.searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
             override fun onQueryTextSubmit(query: String?): Boolean {
