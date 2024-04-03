@@ -38,18 +38,18 @@ class GalleryFragment : Fragment(), GalleryAdapter.OnItemClickListener {
         // Инициализация списка элементов с использованием getString()
         yourFullItemList = listOf(
             GalleryAdapter.StreetItem("Улица Аблукова", getString(R.string.ablukov), R.drawable.ablukov),
-            GalleryAdapter.StreetItem("Улица Алашеева", getString(R.string.ash), R.drawable.image2),
-            GalleryAdapter.StreetItem("Улица Гастелло", getString(R.string.gast), R.drawable.image2),
-            GalleryAdapter.StreetItem("Улица Герасимова", getString(R.string.ger), R.drawable.image2),
-            GalleryAdapter.StreetItem("Улица Доватора", getString(R.string.Dov), R.drawable.image2),
-            GalleryAdapter.StreetItem("Улица Мельникова", getString(R.string.mel), R.drawable.image2),
+            GalleryAdapter.StreetItem("Улица Алашеева", getString(R.string.alashaev), R.drawable.image2),
+            GalleryAdapter.StreetItem("Улица Гастелло", getString(R.string.gastello), R.drawable.image2),
+            GalleryAdapter.StreetItem("Улица Герасимова", getString(R.string.gerasimov), R.drawable.image2),
+            GalleryAdapter.StreetItem("Улица Доватора", getString(R.string.dovatora), R.drawable.image2),
+            GalleryAdapter.StreetItem("Улица Мельникова", getString(R.string.melnikov), R.drawable.image2),
             GalleryAdapter.StreetItem("Улица Панфиловцев", getString(R.string.pan), R.drawable.image2),
             GalleryAdapter.StreetItem("Улица Полбина", getString(R.string.pol), R.drawable.image2),
             GalleryAdapter.StreetItem("Улица Прокофьева", getString(R.string.prok), R.drawable.image2),
             GalleryAdapter.StreetItem("Улица Хваткова", getString(R.string.hvat), R.drawable.image2),
             GalleryAdapter.StreetItem("Улица Черняховского", getString(R.string.cher), R.drawable.image2),
-            GalleryAdapter.StreetItem("Улица Шигаева", getString(R.string.shig), R.drawable.image2),
-            GalleryAdapter.StreetItem("Улица Аблукова", getString(R.string.ablukov), R.drawable.image2)
+            GalleryAdapter.StreetItem("Улица Шигаева", getString(R.string.shig), R.drawable.image2)
+
             // ... добавьте остальные элементы
         )
 
