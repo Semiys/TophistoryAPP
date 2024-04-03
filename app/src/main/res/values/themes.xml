@@ -24,7 +24,9 @@
         <!-- Другие атрибуты стиля -->
     </style>
 
+
     <style name="Theme.TophistoryAPP.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.TophistoryAPP.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
 </resources>
