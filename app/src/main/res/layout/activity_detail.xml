@@ -2,16 +2,18 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="16dp"
+    android:paddingLeft="8dp"
     android:paddingTop="16dp"
-    android:paddingRight="16dp"
-    android:paddingBottom="16dp"
+    android:paddingRight="8dp"
+    android:paddingBottom="5dp"
+
+
     android:background="@drawable/gsdgsdg"> <!-- Замените на ваш ресурс фона -->
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="16dp">
+        android:padding="4dp">
 
         <!-- Кнопка закрытия в правом верхнем углу -->
 
@@ -39,10 +41,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/imageView"
-            android:layout_marginTop="26dp"
+            android:layout_marginTop="13dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="4dp"
             android:lineSpacingExtra="8dp"
             android:gravity="start"
-            android:textSize="16sp" />
+            android:textSize="13sp"
+            android:fontFamily="@font/historyciblos"
+            android:justificationMode="inter_word"
+            android:textStyle="bold"
+            android:textAppearance="@style/MyCustomTextAppearance"
+            />
 
         <!-- Другие элементы -->
 

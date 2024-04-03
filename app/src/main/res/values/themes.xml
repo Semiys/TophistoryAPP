@@ -18,6 +18,11 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
+    <style name="MyCustomTextAppearance" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/black</item>
+        <!-- Другие атрибуты стиля -->
+    </style>
 
     <style name="Theme.TophistoryAPP.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
