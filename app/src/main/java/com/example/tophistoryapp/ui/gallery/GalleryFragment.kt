@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.tophistoryapp.R
 import com.example.tophistoryapp.databinding.FragmentGalleryBinding
 import kotlinx.parcelize.Parcelize
+import androidx.recyclerview.widget.DividerItemDecoration
 
 
 class GalleryFragment : Fragment(), GalleryAdapter.OnItemClickListener {
@@ -59,6 +60,9 @@ class GalleryFragment : Fragment(), GalleryAdapter.OnItemClickListener {
         binding.recyclerView.layoutManager = LinearLayoutManager(context)
         binding.recyclerView.adapter = galleryAdapter
         galleryAdapter.setItems(yourFullItemList)
+
+        val dividerItemDecoration = DividerItemDecoration(binding.recyclerView.context, LinearLayoutManager.VERTICAL)
+        binding.recyclerView.addItemDecoration(dividerItemDecoration)
 
         // Настройка SearchView
         binding.searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {

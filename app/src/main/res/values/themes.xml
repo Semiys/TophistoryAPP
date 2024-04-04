@@ -18,7 +18,16 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
-
+    <style name="MyCustomTextAppearance" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/black</item>
+        <!-- Другие атрибуты стиля -->
+    </style>
+    <style name="Theme.TophistoryAPP.SplashScreen" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/spacol</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/spa</item>
+        <item name="postSplashScreenTheme">@style/Theme.TophistoryAPP.NoActionBar</item>
+    </style>
     <style name="Theme.TophistoryAPP.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.TophistoryAPP.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />

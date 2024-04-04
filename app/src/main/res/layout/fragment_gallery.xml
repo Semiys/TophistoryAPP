@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/spacol"
     tools:context=".ui.gallery.GalleryFragment">
 
     <com.google.android.material.card.MaterialCardView
@@ -23,9 +24,9 @@
             android:id="@+id/searchView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:queryHint="Введите название улицы"
             app:iconifiedByDefault="false"
-            app:queryBackground="@android:color/transparent"/>
+            app:queryBackground="@android:color/transparent"
+            app:queryHint="Введите название улицы" />
     </com.google.android.material.card.MaterialCardView>
 
     <androidx.recyclerview.widget.RecyclerView

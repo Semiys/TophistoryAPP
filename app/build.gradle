@@ -54,4 +54,5 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
     implementation 'com.yandex.android:maps.mobile:4.5.1-lite'
     apply plugin: 'kotlin-parcelize'
+    implementation 'androidx.core:core-splashscreen:1.0.1'
 }
