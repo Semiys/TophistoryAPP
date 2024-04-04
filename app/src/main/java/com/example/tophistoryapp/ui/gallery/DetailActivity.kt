@@ -3,6 +3,7 @@ package com.example.tophistoryapp.ui.gallery
 import android.annotation.SuppressLint
 import android.graphics.Typeface
 import android.os.Bundle
+import android.text.SpannableString
 import android.text.Spanned
 import android.text.style.RelativeSizeSpan
 import android.text.style.StyleSpan
@@ -12,7 +13,6 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.tophistoryapp.R
 import java.util.regex.Pattern
-import android.text.SpannableString
 
 @Suppress("DEPRECATION")
 class DetailActivity : AppCompatActivity() {
@@ -30,7 +30,7 @@ class DetailActivity : AppCompatActivity() {
             findViewById<ImageView>(R.id.imageView).setImageResource(it.imageResId)
             val descriptionTextView = findViewById<TextView>(R.id.descriptionTextView)
             val spannableDescription = SpannableString(it.description)
-            val pattern = Pattern.compile("^\\s*\\S", Pattern.MULTILINE)
+            val pattern = Pattern.compile("\\b([A-ZА-Я])") // Паттерн для поиска заглавных букв
             val matcher = pattern.matcher(spannableDescription)
             while (matcher.find()) {
                 spannableDescription.setSpan(
