@@ -2,6 +2,7 @@ package com.example.tophistoryapp
 
 import android.os.Bundle
 import android.view.Menu
+import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.findNavController
@@ -56,5 +57,16 @@ class MainActivity : AppCompatActivity() {
         val navController = findNavController(R.id.nav_host_fragment_content_main)
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
     }
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.action_info -> {
+                // Навигация к фрагменту Slideshow
+                findNavController(R.id.nav_host_fragment_content_main).navigate(R.id.nav_slideshow)
+                return true
+            }
+        }
+        return super.onOptionsItemSelected(item)
+    }
+
 
 }

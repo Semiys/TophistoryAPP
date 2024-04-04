@@ -9,6 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.tophistoryapp.databinding.FragmentSlideshowBinding
 
+
 class SlideshowFragment : Fragment() {
 
     private var _binding: FragmentSlideshowBinding? = null

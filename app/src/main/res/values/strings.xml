@@ -332,7 +332,7 @@
     <string name="TextView22">Версия: 1.0.0</string>
     <string name="TextView33">Описание приложения...</string>
     <string name="TextView44">Почта: Historyinthestreets@yandex.ru</string>
-    <string name="social_link_text">Группа: https://t.me/v_kurse_info</string>
+    <string name="social_link_text">Tg: https://t.me/v_kurse_info \nVk: https://vk.com/v_kurse_info</string>
     <string name="TextView66">Авторское право на MapKit принадлежит \n© 2024 Yandex
      \nИспользуется Yandex MapKit 4.5.1-lite</string>
     <string name="TextView77">Политика Конфиденциальности \nНаше приложение не собирает и не хранит никаких личных данных пользователей. Все функции приложения доступны без необходимости предоставления личной информации.</string>
@@ -352,5 +352,6 @@
     <string name="close">cloes</string>
     <string name="formagoogle">Тест</string>
     <string name="hello_fourth_tab">abobastest</string>
+    <string name="action_info">icon</string>
 
 </resources>
