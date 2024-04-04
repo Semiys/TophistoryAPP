@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">TophistoryAPP</string>
+    <string name="app_name">История в улицах</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">История в улицах</string>
@@ -328,18 +328,24 @@
     <string name="menu_home">Карта</string>
     <string name="menu_gallery">Улицы</string>
     <string name="menu_slideshow">О проекте</string>
-    <string name="TextView11">Название Приложения</string>
-    <string name="TextView22">Версия 1.0.0</string>
+    <string name="TextView11">История в улицах</string>
+    <string name="TextView22">Версия: 1.0.0</string>
     <string name="TextView33">Описание приложения...</string>
     <string name="TextView44">Почта: Stroycom@gmail.com</string>
     <string name="social_link_text">https://youtu.be/om7bMrBdrVg?si=DTOKFccIrhKZp9O1</string>
-    <string name="TextView66">Авторские права Yandex бла бла</string>
-    <string name="TextView77">конфиденциальность</string>
-    <string name="TextView88">Благодарности</string>
-    <string name="TextView99">О разработчиках</string>
-    <string name="TextView10">FAQ</string>
-    <string name="TextView111">Инструкция по абьюзу</string>
-    <string name="TextView112">История изменений или обновлений</string>
+    <string name="TextView66">Авторское право на MapKit принадлежит \n© 2024 Yandex
+     \nИспользуется Yandex MapKit 4.5.1-lite</string>
+    <string name="TextView77">Политика Конфиденциальности \nНаше приложение не собирает и не хранит никаких личных данных пользователей. Все функции приложения доступны без необходимости предоставления личной информации.</string>
+    <string name="TextView88">
+    Мы хотим выразить свою благодарность всем, кто помогал нам в создании этого приложения. \nОсобая благодарность:\n\n
+    - Нашим разработчикам и дизайнерам за их труд и творчество.\n
+    - Нашим бета-тестерам за их ценные отзывы и предложения.\n
+    - Всем пользователям за поддержку и полезные отзывы, которые помогли улучшить это приложение.\n
+    - [Имя компании или организации], за предоставленные ресурсы и поддержку.\n
+    - Использование MapKit, лицензированное под MapKit SDK, Yandex.
+    </string>
+    <string name="TextView99">О разработчиках \nЭтот проект является результатом совместной работы двух студентов-программистов и одного талантливого дизайнера из УлГТУ. Стремясь сочетать техническое мастерство с эстетической изящностью, мы создали это приложение в рамках учебной программы, чтобы исследовать возможности современных технологий и предложить пользователям нечто уникальное и инновационное. Мы гордимся тем, что можем поделиться нашим творением и надеемся, что оно вам понравится.</string>
+    <string name="TextView10">Часто задаваемые вопросы \n1. Что делать, если я столкнулся с проблемой? \nЕсли у вас возникли проблемы, пожалуйста, обратитесь в нашу службу поддержки, написав на почту приложения. \n2. Если у меня есть вопросы, куда мне обратиться? \n Чтобы  "Связаться с нами" напишите нам на почту приложения.</string>
     <string name="aboba">ABOBA</string>
     <string name="abobaedition">Abobaedition</string>
 

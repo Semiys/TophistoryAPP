@@ -8,4 +8,5 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="spacol">#DCC18D</color>
+    <color name="projectblock">#AE8E50</color>
 </resources>

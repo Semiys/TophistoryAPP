@@ -55,4 +55,5 @@ dependencies {
     implementation 'com.yandex.android:maps.mobile:4.5.1-lite'
     apply plugin: 'kotlin-parcelize'
     implementation 'androidx.core:core-splashscreen:1.0.1'
+    implementation 'androidx.cardview:cardview:1.0.0'
 }
