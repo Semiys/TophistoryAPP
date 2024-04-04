@@ -20,7 +20,8 @@
 
         <activity
             android:name=".ui.gallery.DetailActivity"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Theme.TophistoryAPP.DetailActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
