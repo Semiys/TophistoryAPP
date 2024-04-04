@@ -43,13 +43,13 @@ class GalleryFragment : Fragment(), GalleryAdapter.OnItemClickListener {
             GalleryAdapter.StreetItem("Улица Герасимова", getString(R.string.gerasimov), R.drawable.image2),
             GalleryAdapter.StreetItem("Улица Доватора", getString(R.string.dovatora), R.drawable.image2),
             GalleryAdapter.StreetItem("Улица Мельникова", getString(R.string.melnikov), R.drawable.image2),
-            GalleryAdapter.StreetItem("Улица Панфиловцев", getString(R.string.pan), R.drawable.image2),
-            GalleryAdapter.StreetItem("Улица Полбина", getString(R.string.pol), R.drawable.image2),
-            GalleryAdapter.StreetItem("Улица Прокофьева", getString(R.string.prok), R.drawable.image2),
-            GalleryAdapter.StreetItem("Улица Хваткова", getString(R.string.hvat), R.drawable.image2),
-            GalleryAdapter.StreetItem("Улица Черняховского", getString(R.string.cher), R.drawable.image2),
-            GalleryAdapter.StreetItem("Улица Шигаева", getString(R.string.shig), R.drawable.image2)
-
+            GalleryAdapter.StreetItem("Улица Панфиловцев", getString(R.string.panfilovcev), R.drawable.image2),
+            GalleryAdapter.StreetItem("Улица Полбина", getString(R.string.polbin), R.drawable.image2),
+            GalleryAdapter.StreetItem("Улица Прокофьева", getString(R.string.prokofev), R.drawable.image2),
+            GalleryAdapter.StreetItem("Улица Хваткова", getString(R.string.hvatkov), R.drawable.image2),
+            GalleryAdapter.StreetItem("Улица Черняховского", getString(R.string.chernyahovskiy), R.drawable.image2),
+            GalleryAdapter.StreetItem("Улица Шигаева", getString(R.string.shigaev), R.drawable.image2)
+            // Засвияжский район закрыт.
             // ... добавьте остальные элементы
         )
 
