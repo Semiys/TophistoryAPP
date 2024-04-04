@@ -32,9 +32,9 @@
 
     <style name="Theme.TophistoryAPP.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
     <style name="Theme.TophistoryAPP.DetailActivity" parent="Theme.TophistoryAPP">
-        <item name="colorPrimary">@color/spacol</item>
+        <item name="colorPrimary">#BEA26D</item>
         <!-- Если вы также хотите изменить цвет статус бара для DetailActivity -->
-        <item name="colorPrimaryDark">@color/spacol</item>
+        <item name="colorPrimaryDark">#BEA26D</item>
         <!-- Измените другие цвета и атрибуты при необходимости -->
     </style>
 </resources>
