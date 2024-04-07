@@ -9,12 +9,12 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.appcompat.widget.SearchView
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.tophistoryapp.R
 import com.example.tophistoryapp.databinding.FragmentGalleryBinding
 import kotlinx.parcelize.Parcelize
-import androidx.recyclerview.widget.DividerItemDecoration
 
 
 class GalleryFragment : Fragment(), GalleryAdapter.OnItemClickListener {
@@ -39,17 +39,17 @@ class GalleryFragment : Fragment(), GalleryAdapter.OnItemClickListener {
         // Инициализация списка элементов с использованием getString()
         yourFullItemList = listOf(
             GalleryAdapter.StreetItem("Улица Аблукова", getString(R.string.ablukov), R.drawable.ablukov),
-            GalleryAdapter.StreetItem("Улица Алашеева", getString(R.string.alashaev), R.drawable.image2),
-            GalleryAdapter.StreetItem("Улица Гастелло", getString(R.string.gastello), R.drawable.image2),
-            GalleryAdapter.StreetItem("Улица Герасимова", getString(R.string.gerasimov), R.drawable.image2),
-            GalleryAdapter.StreetItem("Улица Доватора", getString(R.string.dovatora), R.drawable.image2),
-            GalleryAdapter.StreetItem("Улица Мельникова", getString(R.string.melnikov), R.drawable.image2),
-            GalleryAdapter.StreetItem("Улица Панфиловцев", getString(R.string.panfilovcev), R.drawable.image2),
-            GalleryAdapter.StreetItem("Улица Полбина", getString(R.string.polbin), R.drawable.image2),
-            GalleryAdapter.StreetItem("Улица Прокофьева", getString(R.string.prokofev), R.drawable.image2),
-            GalleryAdapter.StreetItem("Улица Хваткова", getString(R.string.hvatkov), R.drawable.image2),
-            GalleryAdapter.StreetItem("Улица Черняховского", getString(R.string.chernyahovskiy), R.drawable.image2),
-            GalleryAdapter.StreetItem("Улица Шигаева", getString(R.string.shigaev), R.drawable.image2)
+            GalleryAdapter.StreetItem("Улица Алашеева", getString(R.string.alashaev), R.drawable.alasheev),
+            GalleryAdapter.StreetItem("Улица Гастелло", getString(R.string.gastello), R.drawable.gastello),
+            GalleryAdapter.StreetItem("Улица Герасимова", getString(R.string.gerasimov), R.drawable.gerasimov),
+            GalleryAdapter.StreetItem("Улица Доватора", getString(R.string.dovatora), R.drawable.dovatopa),
+            GalleryAdapter.StreetItem("Улица Мельникова", getString(R.string.melnikov), R.drawable.melnikov),
+            GalleryAdapter.StreetItem("Улица Панфиловцев", getString(R.string.panfilovcev), R.drawable.panfilovec),
+            GalleryAdapter.StreetItem("Улица Полбина", getString(R.string.polbin), R.drawable.polbin),
+            GalleryAdapter.StreetItem("Улица Прокофьева", getString(R.string.prokofev), R.drawable.prokofiev),
+            GalleryAdapter.StreetItem("Улица Хваткова", getString(R.string.hvatkov), R.drawable.hvatkova),
+            GalleryAdapter.StreetItem("Улица Черняховского", getString(R.string.chernyahovskiy), R.drawable.chernyxovsk),
+            GalleryAdapter.StreetItem("Улица Шигаева", getString(R.string.shigaev), R.drawable.shigaev)
             // Засвияжский район закрыт.
             // ... добавьте остальные элементы
         )

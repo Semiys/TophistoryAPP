@@ -2,8 +2,8 @@ package com.example.tophistoryapp
 
 import android.os.Bundle
 import android.view.Menu
-import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
@@ -12,9 +12,6 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.tophistoryapp.databinding.ActivityMainBinding
 import com.google.android.material.navigation.NavigationView
-import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
-import androidx.fragment.app.Fragment
-import com.example.tophistoryapp.ui.slideshow.SlideshowFragment
 
 class MainActivity : AppCompatActivity() {
 
@@ -42,7 +39,7 @@ class MainActivity : AppCompatActivity() {
         // menu should be considered as top level destinations.
         appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow, R.id.nav_fourth_tab
+                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow, R.id.nav_fourth_tab, R.id.nav_fifth_tab
             ), drawerLayout
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
