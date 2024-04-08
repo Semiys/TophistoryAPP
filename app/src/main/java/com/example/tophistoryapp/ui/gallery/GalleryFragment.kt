@@ -51,7 +51,7 @@ class GalleryFragment : Fragment(), GalleryAdapter.OnItemClickListener {
             GalleryAdapter.StreetItem("Улица Черняховского", getString(R.string.chernyahovskiy), R.drawable.chernyxovsk),
             GalleryAdapter.StreetItem("Улица Шигаева", getString(R.string.shigaev), R.drawable.shigaev),
             // Засвияжский район закрыт.
-            // Заволжский район открыт.
+            // Заволжский район открыт..
             GalleryAdapter.StreetItem("Улица Алексея Наганова", getString(R.string.naganov), R.drawable.naganovv),
             GalleryAdapter.StreetItem("Улица Врача Михайлова", getString(R.string.mixailovv), R.drawable.mixailov),
             GalleryAdapter.StreetItem("Улица Генерала Кашубы", getString(R.string.kashubas), R.drawable.kashuba),
@@ -66,7 +66,7 @@ class GalleryFragment : Fragment(), GalleryAdapter.OnItemClickListener {
             GalleryAdapter.StreetItem("Улица Шурова", getString(R.string.shurovv), R.drawable.shurov),
             // Заволжский район закрыт.
             // Железнодорожный район открыт.
-            GalleryAdapter.StreetItem("Улица Героев Свири", getString(R.string.baryshevv), R.drawable.baryshev),
+            GalleryAdapter.StreetItem("Улица Героев Свири", getString(R.string.geroi_sviri), R.drawable.baryshev),
             GalleryAdapter.StreetItem("Проезд Героя России Аверьянова", getString(R.string.averinovaa), R.drawable.averinova),
             GalleryAdapter.StreetItem("Улица Каштанкина", getString(R.string.kashtankinn), R.drawable.kashtankin),
             GalleryAdapter.StreetItem("Улица Расковой", getString(R.string.rackovaa), R.drawable.rackova),
