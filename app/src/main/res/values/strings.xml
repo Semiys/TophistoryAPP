@@ -7,7 +7,7 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">О проекте</string>
 
- <!-- Засвияжский район -->
+    <!-- Засвияжский район -->
     <string name="ablukov">Александр Аблуков\n
     18 декабря 1921 года - 11 февраля 1964 года\n\n
 
@@ -541,7 +541,6 @@ C января 1943 года – заместитель командира 3-й 
     <!-- Конец Ленинского района -->
 
 
-
     <string name="menu_home">Карта</string>
     <string name="menu_gallery">Улицы</string>
     <string name="menu_slideshow">О проекте</string>
@@ -570,7 +569,6 @@ C января 1943 года – заместитель командира 3-й 
     <string name="formagoogle">Тест</string>
     <string name="hello_fourth_tab">abobastest</string>
     <string name="newshistorys">Новости</string>
-
 
 
 </resources>
