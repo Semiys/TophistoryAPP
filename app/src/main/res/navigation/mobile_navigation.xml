@@ -27,4 +27,9 @@
         android:name="com.example.tophistoryapp.ui.fouthtab.FourthTabFragment"
         android:label="@string/formagoogle"
         tools:layout="@layout/fragment_fourth_tab" />
+    <fragment
+        android:id="@+id/nav_fifth_tab"
+        android:name="com.example.tophistoryapp.ui.fivetabus.FivetabFragment"
+        android:label="@string/newshistorys"
+        tools:layout="@layout/fragment_fifth_tab" />
 </navigation>

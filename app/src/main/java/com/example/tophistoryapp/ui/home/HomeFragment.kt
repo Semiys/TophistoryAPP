@@ -94,7 +94,7 @@ class HomeFragment : Fragment() {
                     val userLocation = Point(location.position.latitude, location.position.longitude)
                     val placemark = mapObjects?.addPlacemark(userLocation)
                      // Если вам не нужно изменять прозрачность метки, эту строку можно удалить
-                    placemark?.setIcon(ImageProvider.fromResource(requireContext(), R.drawable.zggheal))
+                    placemark?.setIcon(ImageProvider.fromResource(requireContext(), R.drawable.ghtswtops))
                     mapView?.map?.move(
                         CameraPosition(userLocation, 16.0f, 0.0f, 0.0f),
                         Animation(Animation.Type.SMOOTH, 2.5f),

@@ -17,9 +17,14 @@
             android:icon="@drawable/test1"
             android:title="@string/formagoogle" />
         <item
+            android:id="@+id/nav_fifth_tab"
+            android:icon="@drawable/newshistor"
+            android:title="@string/newshistorys" />
+        <item
             android:id="@+id/nav_slideshow"
             android:icon="@drawable/profect1"
             android:title="@string/menu_slideshow" />
+
 
     </group>
 </menu>
