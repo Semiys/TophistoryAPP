@@ -51,7 +51,7 @@ class GalleryFragment : Fragment(), GalleryAdapter.OnItemClickListener {
             GalleryAdapter.StreetItem("Улица Черняховского", getString(R.string.chernyahovskiy), R.drawable.chernyxovsk),
             GalleryAdapter.StreetItem("Улица Шигаева", getString(R.string.shigaev), R.drawable.shigaev),
             // Засвияжский район закрыт.
-            // Заволжский район открыт.
+            // Заволжский район открыт..
             GalleryAdapter.StreetItem("Улица Алексея Наганова", getString(R.string.naganov), R.drawable.naganovv),
             GalleryAdapter.StreetItem("Улица Врача Михайлова", getString(R.string.mixailovv), R.drawable.mixailov),
             GalleryAdapter.StreetItem("Улица Генерала Кашубы", getString(R.string.kashubas), R.drawable.kashuba),
