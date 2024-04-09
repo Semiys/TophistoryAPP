@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
                     // Переход к MainActivity2
                     startActivity(Intent(this@MainActivity, MainActivity2::class.java))
                     // Завершение SplashScreen активности, чтобы пользователь не мог вернуться к ней
-                    splashScreenProvider.remove()
+                    finish() // Замените splashScreenProvider.remove() на finish()
                 }, 1000) // Задержка в 1000 миллисекунд (1 секунда)
             }
         }

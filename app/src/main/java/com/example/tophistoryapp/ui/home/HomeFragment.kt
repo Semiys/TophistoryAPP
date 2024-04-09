@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import android.app.Application
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
@@ -22,7 +23,6 @@ import com.yandex.mapkit.map.CameraPosition
 import com.yandex.mapkit.map.MapObjectCollection
 import com.yandex.mapkit.mapview.MapView
 import com.yandex.runtime.image.ImageProvider
-
 @Suppress("DEPRECATION")
 class HomeFragment : Fragment() {
 
@@ -35,8 +35,6 @@ class HomeFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        MapKitFactory.setApiKey("b24e54ca-8c0c-4986-a17a-091f18cbe011")
-        MapKitFactory.initialize(requireContext())
         locationManager = MapKitFactory.getInstance().createLocationManager()
 
     }
@@ -52,6 +50,11 @@ class HomeFragment : Fragment() {
 
         mapView = binding.mapview
         mapObjects = mapView?.map?.mapObjects?.addCollection()
+        mapView?.map?.move(
+            CameraPosition(Point(54.314192, 48.403123), 14.0f, 0.0f, 0.0f),
+            Animation(Animation.Type.SMOOTH, 0f),
+            null
+        )
 
         binding.buttonLocation.setOnClickListener {
             checkLocationPermission()
@@ -168,3 +171,4 @@ class HomeFragment : Fragment() {
 
 
 }
+
