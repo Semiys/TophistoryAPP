@@ -14,34 +14,36 @@
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="297dp"
-            android:layout_height="383dp"
+            android:layout_width="301dp"
+            android:layout_height="407dp"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="27dp"
+            android:layout_marginTop="70dp"
             android:scaleType="centerCrop" />
 
         <TextView
             android:id="@+id/descriptionTextView"
-            android:layout_width="match_parent"
+            android:layout_width="386dp"
             android:layout_height="wrap_content"
             android:layout_below="@id/imageView"
-            android:layout_marginTop="13dp"
-            android:paddingLeft="0dp"
-            android:paddingRight="4dp"
-            android:lineSpacingExtra="8dp"
-            android:gravity="start"
-            android:textSize="13sp"
+            android:layout_marginTop="23dp"
             android:fontFamily="@font/historyciblos"
+            android:gravity="start"
             android:justificationMode="inter_word"
-            android:textStyle="bold"
-            android:textAppearance="@style/MyCustomTextAppearance" />
+            android:lineSpacingExtra="8dp"
+            android:paddingLeft="0dp"
+            android:paddingTop="30dp"
+            android:paddingRight="4dp"
+            android:textAppearance="@style/MyCustomTextAppearance"
+            android:textSize="13sp"
+            android:textStyle="bold" />
 
         <!-- Обновленное положение кнопки -->
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/speakButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="speak" /> <!-- Замените текст кнопки на нужный вам ресурс строки -->
+            android:layout_width="68dp"
+            android:layout_height="62dp"
+            android:background="@drawable/knopka1"
+            android:paddingTop="60dp" /> <!-- Замените текст кнопки на нужный вам ресурс строки -->
 
     </RelativeLayout>
 </ScrollView>
