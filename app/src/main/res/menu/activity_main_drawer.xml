@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
@@ -8,23 +9,47 @@
             android:id="@+id/nav_home"
             android:icon="@drawable/map73"
             android:title="@string/menu_home" />
+
+        <item
+            android:id="@+id/nav_separator1"
+            android:title=""
+            app:actionLayout="@layout/nav_menu_separator" />
+
         <item
             android:id="@+id/nav_gallery"
             android:icon="@drawable/street"
             android:title="@string/menu_gallery" />
+
+        <item
+            android:id="@+id/nav_separator2"
+            android:title=""
+            app:actionLayout="@layout/nav_menu_separator" />
         <item
             android:id="@+id/nav_fourth_tab"
             android:icon="@drawable/test1"
             android:title="@string/formagoogle" />
+
+        <item
+            android:id="@+id/nav_separator3"
+            android:title=""
+            app:actionLayout="@layout/nav_menu_separator" />
         <item
             android:id="@+id/nav_fifth_tab"
             android:icon="@drawable/newshistor"
             android:title="@string/newshistorys" />
+
+
+        <item
+            android:id="@+id/nav_separator4"
+            android:title=""
+            app:actionLayout="@layout/nav_menu_separator" />
         <item
             android:id="@+id/nav_slideshow"
             android:icon="@drawable/profect1"
             android:title="@string/menu_slideshow" />
-
-
+        <item
+            android:id="@+id/nav_separator5"
+            android:title=""
+            app:actionLayout="@layout/nav_menu_separator" />
     </group>
 </menu>
