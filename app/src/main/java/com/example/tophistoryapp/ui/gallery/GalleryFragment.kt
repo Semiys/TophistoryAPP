@@ -110,7 +110,7 @@ class GalleryFragment : Fragment(), GalleryAdapter.OnItemClickListener {
             GalleryAdapter.StreetItem("Улица Беляева", getString(R.string.belyaev), R.drawable.gromova),
             GalleryAdapter.StreetItem("Улица Богдана Хмельницкого", getString(R.string.hmelnickiy), R.drawable.gromova),
             GalleryAdapter.StreetItem("Улица Богдана Хитрово", getString(R.string.hitrovo), R.drawable.gromova),
-            GalleryAdapter.StreetItem("Улица bogdanov", getString(R.string.bogdanov), R.drawable.gromova),
+            GalleryAdapter.StreetItem("Улица Богданова", getString(R.string.bogdanov), R.drawable.gromova),
             GalleryAdapter.StreetItem("Улица Бородина", getString(R.string.borodin), R.drawable.gromova),
             GalleryAdapter.StreetItem("Улица Брюханова", getString(R.string.bryhanov), R.drawable.gromova),
             GalleryAdapter.StreetItem("Улица Бутурлиных", getString(R.string.bytyrlin), R.drawable.gromova),
