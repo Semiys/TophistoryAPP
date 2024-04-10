@@ -18,7 +18,7 @@
             android:title="@string/formagoogle" />
         <item
             android:id="@+id/nav_fifth_tab"
-            android:icon="@drawable/newshistor"
+            android:icon="@drawable/baseline_source_24"
             android:title="@string/newshistorys" />
         <item
             android:id="@+id/nav_slideshow"
