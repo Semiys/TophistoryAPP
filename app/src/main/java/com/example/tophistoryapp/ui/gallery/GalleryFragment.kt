@@ -105,17 +105,17 @@ class GalleryFragment : Fragment(), GalleryAdapter.OnItemClickListener {
             GalleryAdapter.StreetItem("Улица Баумана", getString(R.string.bauman), R.drawable.baumas),
             GalleryAdapter.StreetItem("Улица Бебеля", getString(R.string.bebel), R.drawable.bebeld),
             //32/330
-            GalleryAdapter.StreetItem("Улица Белинского", getString(R.string.belinskiy), R.drawable.gromova),
-            GalleryAdapter.StreetItem("Улица Белова", getString(R.string.belov), R.drawable.gromova),
-            GalleryAdapter.StreetItem("Улица Беляева", getString(R.string.belyaev), R.drawable.gromova),
-            GalleryAdapter.StreetItem("Улица Богдана Хмельницкого", getString(R.string.hmelnickiy), R.drawable.gromova),
-            GalleryAdapter.StreetItem("Улица Богдана Хитрово", getString(R.string.hitrovo), R.drawable.gromova),
-            GalleryAdapter.StreetItem("Улица Богданова", getString(R.string.bogdanov), R.drawable.gromova),
-            GalleryAdapter.StreetItem("Улица Бородина", getString(R.string.borodin), R.drawable.gromova),
-            GalleryAdapter.StreetItem("Улица Брюханова", getString(R.string.bryhanov), R.drawable.gromova),
-            GalleryAdapter.StreetItem("Улица Бутурлиных", getString(R.string.bytyrlin), R.drawable.gromova),
-            GalleryAdapter.StreetItem("Улица Варейкиса", getString(R.string.vareikis), R.drawable.gromova),
-            GalleryAdapter.StreetItem("Улица Вершинина", getString(R.string.vershinin), R.drawable.gromova)
+            GalleryAdapter.StreetItem("Улица Белинского", getString(R.string.belinskiy), R.drawable.belinsky),
+            GalleryAdapter.StreetItem("Улица Белова", getString(R.string.belov), R.drawable.belovv),
+            GalleryAdapter.StreetItem("Улица Беляева", getString(R.string.belyaev), R.drawable.belayevv),
+            GalleryAdapter.StreetItem("Улица Богдана Хмельницкого", getString(R.string.hmelnickiy), R.drawable.xmelinskyas),
+            GalleryAdapter.StreetItem("Улица Богдана Хитрово", getString(R.string.hitrovo), R.drawable.hitrovos),
+            GalleryAdapter.StreetItem("Улица Богданова", getString(R.string.bogdanov), R.drawable.bogdanosa),
+            GalleryAdapter.StreetItem("Улица Бородина", getString(R.string.borodin), R.drawable.borodins),
+            GalleryAdapter.StreetItem("Улица Брюханова", getString(R.string.bryhanov), R.drawable.bruhanov),
+            GalleryAdapter.StreetItem("Улица Бутурлиных", getString(R.string.bytyrlin), R.drawable.fbuturlin),
+            GalleryAdapter.StreetItem("Улица Варейкиса", getString(R.string.vareikis), R.drawable.vareikissa),
+            GalleryAdapter.StreetItem("Улица Вершинина", getString(R.string.vershinin), R.drawable.vershinsain)
             //48/330
 
             // ... добавьте остальные элементы
