@@ -115,9 +115,23 @@ class GalleryFragment : Fragment(), GalleryAdapter.OnItemClickListener {
             GalleryAdapter.StreetItem("Улица Брюханова", getString(R.string.bryhanov), R.drawable.bruhanov),
             GalleryAdapter.StreetItem("Улица Бутурлиных", getString(R.string.bytyrlin), R.drawable.fbuturlin),
             GalleryAdapter.StreetItem("Улица Варейкиса", getString(R.string.vareikis), R.drawable.vareikissa),
-            GalleryAdapter.StreetItem("Улица Вершинина", getString(R.string.vershinin), R.drawable.vershinsain)
+            GalleryAdapter.StreetItem("Улица Вершинина", getString(R.string.vershinin), R.drawable.vershinsain),
             //48/330
-
+            GalleryAdapter.StreetItem("Улица Ярославского", getString(R.string.iroslavskiy), R.drawable.yaroslavskyi),
+            GalleryAdapter.StreetItem("Улица Якурнова", getString(R.string.ikurnov), R.drawable.ikurnovv),
+            GalleryAdapter.StreetItem("Улица Якупова", getString(R.string.yakupov), R.drawable.yakupovv),
+            GalleryAdapter.StreetItem("Переулок Яковлева", getString(R.string.yalovlev), R.drawable.yakovlevvv),
+            GalleryAdapter.StreetItem("Улица Языкова", getString(R.string.yazukov), R.drawable.yazukovvvv),
+            GalleryAdapter.StreetItem("Улица Щорса", getString(R.string.shorsaa), R.drawable.shorsaas),
+            GalleryAdapter.StreetItem("Улица Шпака", getString(R.string.shpaktovich), R.drawable.shpaktov),
+            GalleryAdapter.StreetItem("Улица Шевченко", getString(R.string.shevchenko), R.drawable.shevchenkolatro),
+            GalleryAdapter.StreetItem("Улица Чкалова", getString(R.string.chkalovskiy), R.drawable.chkalovvski),
+            GalleryAdapter.StreetItem("Улица Чехова", getString(R.string.chexova), R.drawable.chexovasd),
+            GalleryAdapter.StreetItem("Улица Чернышевского", getString(R.string.chernashvks), R.drawable.chernshevskiy),
+            GalleryAdapter.StreetItem("Улица Чапаева", getString(R.string.chapaevskdf), R.drawable.chapaevsd),
+            GalleryAdapter.StreetItem("Улица Чайковского", getString(R.string.chaikosvkys), R.drawable.chaikovsky),
+            GalleryAdapter.StreetItem("Улица Циолковского", getString(R.string.cialkosvks), R.drawable.cialkosvkyas),
+            GalleryAdapter.StreetItem("Проспект Хо Ши Мина", getString(R.string.shoshomina), R.drawable.hoshiminad),
             // ... добавьте остальные элементы
         )
 
