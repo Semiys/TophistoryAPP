@@ -132,6 +132,26 @@ class GalleryFragment : Fragment(), GalleryAdapter.OnItemClickListener {
             GalleryAdapter.StreetItem("Улица Чайковского", getString(R.string.chaikosvkys), R.drawable.chaikovsky),
             GalleryAdapter.StreetItem("Улица Циолковского", getString(R.string.cialkosvks), R.drawable.cialkosvkyas),
             GalleryAdapter.StreetItem("Проспект Хо Ши Мина", getString(R.string.shoshomina), R.drawable.hoshiminad),
+            GalleryAdapter.StreetItem("Улица Фурманова", getString(R.string.farmond), R.drawable.furmanodvs),
+            GalleryAdapter.StreetItem("Улица Фрунзе", getString(R.string.frunzeee), R.drawable.frunzee),
+            GalleryAdapter.StreetItem("Улица Энгельса", getString(R.string.engelms), R.drawable.fridrixxd),
+            GalleryAdapter.StreetItem("Переулок Ушакова", getString(R.string.ushakovskiy), R.drawable.ushakovvs),
+            GalleryAdapter.StreetItem("Переулок Устинова", getString(R.string.ustinovs), R.drawable.ustinovsk),
+            GalleryAdapter.StreetItem("Улица Урицкого", getString(R.string.urichkisay), R.drawable.uricskiyas),
+            GalleryAdapter.StreetItem("Проспект Тюленева", getString(R.string.tulenevasd), R.drawable.tulenevasdg),
+            GalleryAdapter.StreetItem("Улица Тухачевского", getString(R.string.tuxachevskogo), R.drawable.tuhaxevs),
+            GalleryAdapter.StreetItem("Улица Тургенева", getString(R.string.turgenev), R.drawable.turgenevds),
+            GalleryAdapter.StreetItem("Проспект Туполева", getString(R.string.tupoleva), R.drawable.tupolevsd),
+            GalleryAdapter.StreetItem("Улица Толбухина", getString(R.string.tolbuxon), R.drawable.tolbuxinsd),
+            GalleryAdapter.StreetItem("Улица Тимирязева", getString(R.string.timirazev), R.drawable.timiraevsd),
+            GalleryAdapter.StreetItem("Улица Терешковой", getString(R.string.tereshkovaddg), R.drawable.tereshkovad),
+            GalleryAdapter.StreetItem("Улица Тельмана", getString(R.string.telmanadaf), R.drawable.telmanf),
+            GalleryAdapter.StreetItem("Улица Сурова", getString(R.string.surovdgf), R.drawable.surovfsafas),
+            GalleryAdapter.StreetItem("Улица Сурикова", getString(R.string.surikovsdas), R.drawable.surikovadad),
+            GalleryAdapter.StreetItem("Переулок Суворова", getString(R.string.suvorodf), R.drawable.suvorodagasf),
+            GalleryAdapter.StreetItem("Улица Столыпина", getString(R.string.stolapingds), R.drawable.stolapingsd),
+
+
             // ... добавьте остальные элементы
         )
 
