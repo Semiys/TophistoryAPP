@@ -138,7 +138,6 @@ class GalleryFragment : Fragment(), GalleryAdapter.OnItemClickListener {
             GalleryAdapter.StreetItem("Переулок Ушакова", getString(R.string.ushakovskiy), R.drawable.ushakovvs),
             GalleryAdapter.StreetItem("Переулок Устинова", getString(R.string.ustinovs), R.drawable.ustinovsk),
             GalleryAdapter.StreetItem("Улица Урицкого", getString(R.string.urichkisay), R.drawable.uricskiyas),
-            GalleryAdapter.StreetItem("Проспект Тюленева", getString(R.string.tulenevasd), R.drawable.tulenevasdg),
             GalleryAdapter.StreetItem("Улица Тухачевского", getString(R.string.tuxachevskogo), R.drawable.tuhaxevs),
             GalleryAdapter.StreetItem("Улица Тургенева", getString(R.string.turgenev), R.drawable.turgenevds),
             GalleryAdapter.StreetItem("Проспект Туполева", getString(R.string.tupoleva), R.drawable.tupolevsd),
@@ -150,7 +149,11 @@ class GalleryFragment : Fragment(), GalleryAdapter.OnItemClickListener {
             GalleryAdapter.StreetItem("Улица Сурикова", getString(R.string.surikovsdas), R.drawable.surikovadad),
             GalleryAdapter.StreetItem("Переулок Суворова", getString(R.string.suvorodf), R.drawable.suvorodagasf),
             GalleryAdapter.StreetItem("Улица Столыпина", getString(R.string.stolapingds), R.drawable.stolapingsd),
-
+            GalleryAdapter.StreetItem("Улица Гагарина", getString(R.string.gagarind), R.drawable.ggagarhfd),
+            GalleryAdapter.StreetItem("Улица Гая", getString(R.string.gaysf), R.drawable.gsdsg),
+            GalleryAdapter.StreetItem("Улица Карла Маркса", getString(R.string.karlmasga), R.drawable.gsdsg),
+            GalleryAdapter.StreetItem("Улица Ленина", getString(R.string.leningad), R.drawable.lenintops),
+            GalleryAdapter.StreetItem("Улица Льва Толстого", getString(R.string.rjsfjj), R.drawable.ggagh),
 
             // ... добавьте остальные элементы
         )
