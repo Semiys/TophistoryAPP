@@ -154,6 +154,12 @@ class GalleryFragment : Fragment(), GalleryAdapter.OnItemClickListener {
             GalleryAdapter.StreetItem("Улица Карла Маркса", getString(R.string.karlmasga), R.drawable.gsdsg),
             GalleryAdapter.StreetItem("Улица Ленина", getString(R.string.leningad), R.drawable.lenintops),
             GalleryAdapter.StreetItem("Улица Льва Толстого", getString(R.string.rjsfjj), R.drawable.ggagh),
+            GalleryAdapter.StreetItem("Улица Врача Щербакова", getString(R.string.sherbakov), R.drawable.dscherbakov),
+            GalleryAdapter.StreetItem("Улица Карла Либкнехта", getString(R.string.libnesdta), R.drawable.karllibhnext),
+            GalleryAdapter.StreetItem("Улица Стасова", getString(R.string.stasovda), R.drawable.stasovgas),
+            GalleryAdapter.StreetItem("Улица Соловьёва", getString(R.string.solovmdg), R.drawable.solovmdgsa),
+            GalleryAdapter.StreetItem("Улица Соловьёва", getString(R.string.solovmdg), R.drawable.solovmdgsa),
+
 
             // ... добавьте остальные элементы
         )

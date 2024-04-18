@@ -12,7 +12,7 @@ android {
 
 
     defaultConfig {
-        applicationId "com.example.tophistoryapp"
+        applicationId "history.in.the.streets"
         minSdk 21
         targetSdk 34
         versionCode 1
