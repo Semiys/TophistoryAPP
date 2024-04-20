@@ -213,6 +213,46 @@ class GalleryFragment : Fragment(), GalleryAdapter.OnItemClickListener {
             GalleryAdapter.StreetItem("Улица Крупской", getString(R.string.krupasfasgwqeg), R.drawable.krupgewqg),
             GalleryAdapter.StreetItem("Улица Кролюницкого", getString(R.string.krolunickogoa), R.drawable.krolunickkiyasdg),
             GalleryAdapter.StreetItem("Улица Красина", getString(R.string.krolucinasdbd), R.drawable.krasinsagga),
+            GalleryAdapter.StreetItem("Улица Котовского", getString(R.string.kotovasd), R.drawable.ksdgotovsky),
+            GalleryAdapter.StreetItem("Улица Корюкина", getString(R.string.korukingsdg), R.drawable.korukingawsg),
+            GalleryAdapter.StreetItem("Улица Корунковой", getString(R.string.korunkovahas), R.drawable.nikolaevsafgg),
+            GalleryAdapter.StreetItem("Улица Колесова", getString(R.string.kolesovash), R.drawable.koleavsaqwqh),
+            GalleryAdapter.StreetItem("Улица Кобозева", getString(R.string.kobozevasj), R.drawable.kobozevasadh),
+            GalleryAdapter.StreetItem("Улица Кирова", getString(R.string.kirovashwwsdgs), R.drawable.kirovasgasgtewg),
+            GalleryAdapter.StreetItem("Улица Каргина", getString(R.string.karginahgsdhs), R.drawable.karginasdgag),
+            GalleryAdapter.StreetItem("Улица Карбышева", getString(R.string.karbushevasda), R.drawable.karbudsfhahf),
+            GalleryAdapter.StreetItem("Улица Карамзина", getString(R.string.karamzinajjsfdhgsfdg), R.drawable.karaziimnisf),
+            GalleryAdapter.StreetItem("Улица Калнина", getString(R.string.kalninasdah), R.drawable.kalninasfasg),
+            GalleryAdapter.StreetItem("Улица Калинина", getString(R.string.kalininajsdgsd), R.drawable.kalininafasf),
+            GalleryAdapter.StreetItem("Проспект Зырина", getString(R.string.zurinasfasg), R.drawable.zurinasfasgasg),
+            GalleryAdapter.StreetItem("Улица Жиркевича", getString(R.string.jirkeevich), R.drawable.jirkeevichasfa),
+            GalleryAdapter.StreetItem("Улица Ефремова", getString(R.string.efremovasdag), R.drawable.efremovasfas),
+            GalleryAdapter.StreetItem("Улица Воровского", getString(R.string.vorovskoyasfga), R.drawable.vorovskoysadsf),
+            GalleryAdapter.StreetItem("Улица Вяземского", getString(R.string.vazyagsgas), R.drawable.vyzemvskgagag),
+            GalleryAdapter.StreetItem("Улица Габдулы Тукая", getString(R.string.gadloagasdgag), R.drawable.grasdasfastg),
+            GalleryAdapter.StreetItem("Улица Гайдара", getString(R.string.gaidasras), R.drawable.gaidararag),
+            GalleryAdapter.StreetItem("Улица Галактионова", getString(R.string.galaktinogasf), R.drawable.galaktionosdfasfhe),
+            GalleryAdapter.StreetItem("Улица Герцена", getString(R.string.gercenfasfgasg), R.drawable.gercengasgas),
+            GalleryAdapter.StreetItem("Улица Гимова", getString(R.string.esmeralsdasda), R.drawable.gimovafaqdsgs),
+            GalleryAdapter.StreetItem("Улица Гладышева", getString(R.string.gladushevafa), R.drawable.gladushefavg),
+            GalleryAdapter.StreetItem("Улица Глинки", getString(R.string.glinkiasf), R.drawable.glinakfafwq),
+            GalleryAdapter.StreetItem("Улица Гоголя", getString(R.string.gogolasfa), R.drawable.goglasfdasfa),
+            GalleryAdapter.StreetItem("Улица Гончарова", getString(R.string.goncharovscaf), R.drawable.goncharovsdga),
+            GalleryAdapter.StreetItem("Улица Грибоедова", getString(R.string.griboedovaga), R.drawable.griboedogvag),
+            GalleryAdapter.StreetItem("Улица Гуслева", getString(R.string.guslevaasd), R.drawable.gusleava),
+            GalleryAdapter.StreetItem("Улица Давыдова", getString(R.string.davudovagq), R.drawable.davxuqfq),
+            GalleryAdapter.StreetItem("Улица Державина", getString(R.string.derjavinad), R.drawable.derjavsinfqasdqqwe),
+            GalleryAdapter.StreetItem("Улица Дзержинского", getString(R.string.jderindsfqfqq), R.drawable.jedqfdqwq),
+            GalleryAdapter.StreetItem("Проезд Дмитрия Кожемякина", getString(R.string.kojemankifqw), R.drawable.kojemadqq),
+            GalleryAdapter.StreetItem("Улица Дмитрия Ульянова", getString(R.string.ulunoqwdeqw), R.drawable.ulewqfqwgqgqeg),
+            GalleryAdapter.StreetItem("Улица Докучаева", getString(R.string.dokuchaevq), R.drawable.dokuchawseqwvq),
+            GalleryAdapter.StreetItem("Переулок Добролюбова", getString(R.string.dobroluvafqq), R.drawable.dobrolqfqw),
+            GalleryAdapter.StreetItem("Улица Достоевского", getString(R.string.dostoevqqqs), R.drawable.dostoefvqeqsqajwsda),
+            GalleryAdapter.StreetItem("Переулок Еланского", getString(R.string.elinsdqqw), R.drawable.elanksfiqifwq)
+
+
+
+
 
 
 
