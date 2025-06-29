@@ -8,8 +8,7 @@
 
 | Главный экран с картой | Экран с историей |
 | :---: | :---: |
-| ![Главный экран]([ПУТЬ_К_ВАШЕМУ_СКРИНШОТУ_1.png](https://github.com/user-attachments/assets/6d6f3659-aa28-4efd-a0a4-ed030bcbaeb7)) | ![Экран истории]([ПУТЬ_К_ВАШЕМУ_СКРИНШОТУ_2.png](https://github.com/user-attachments/assets/d54713f6-628b-49f3-adcb-4cd3d39e24e0)) |
-
+| ![Главный экран](https://github.com/user-attachments/assets/09b2256f-a76c-47f3-b1cd-24233da939bd) | ![Экран истории](https://github.com/user-attachments/assets/09b2256f-a76c-47f3-b1cd-24233da939bd) |
 
 
 ## ⚙️ Стек технологий
