@@ -8,7 +8,6 @@
 **Приложение опубликовано в официальном магазине приложений RuStore.**
 
 [![Доступно в RuStore](https://cdn-www.rustore.ru/b2c-static-images/logo/RuStore_Badge_Monochrome_RUS.svg)](https://www.rustore.ru/catalog/app/com.example.tophistoryapp)
-*(Замените ссылку на вашу реальную ссылку в RuStore)*
 
 
 ## 📱 Скриншоты
