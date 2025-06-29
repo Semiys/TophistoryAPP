@@ -8,7 +8,7 @@
 **Приложение опубликовано в официальном магазине приложений RuStore.**
 
 <a href="https://www.rustore.ru/catalog/app/com.example.tophistoryapp">
-  <img src="https://github.com/user-attachments/assets/c0e56f63-6a42-4b82-bc19-377fa1e02136" alt="Доступно в RuStore" width="200">
+  <img src="https://github.com/user-attachments/assets/c0e56f63-6a42-4b82-bc19-377fa1e02136" alt="Доступно в RuStore" width="100">
 </a>
 
 ## 📱 Скриншоты
