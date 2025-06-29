@@ -1,4 +1,4 @@
-# TopHistoryApp
+# История в улицах Ульяновска
 
 Простое Android-приложение, которое знакомит пользователя с историческими фактами, привязанными к геолокациям. Проект создан для демонстрации навыков работы с картами и основными компонентами Android.
 
@@ -8,7 +8,7 @@
 
 | Главный экран с картой | Экран с историей |
 | :---: | :---: |
-| ![Главный экран](https://github.com/user-attachments/assets/09b2256f-a76c-47f3-b1cd-24233da939bd) | ![Экран истории](https://github.com/user-attachments/assets/09b2256f-a76c-47f3-b1cd-24233da939bd) |
+| ![Главный экран](https://github.com/user-attachments/assets/09b2256f-a76c-47f3-b1cd-24233da939bd) | ![Экран истории](https://github.com/user-attachments/assets/cb0f5a5d-5943-4c2d-a0a7-41c9f7c1a0b6) |
 
 
 ## ⚙️ Стек технологий
