@@ -5,10 +5,11 @@
 ## 📱 Скриншоты
 
 
-| Главный экран с картой | Экран с историей |
+| Главный экран с картой |
 | :---: | :---: |
 | ![image](https://github.com/user-attachments/assets/dc9e78b9-2ecc-426b-8f05-fc36ddc49cdf)|
- | ![image](https://github.com/user-attachments/assets/fed7b075-d1d4-4017-aad8-ccd3555d6e89)|
+| Экран с историей |
+| ![image](https://github.com/user-attachments/assets/fed7b075-d1d4-4017-aad8-ccd3555d6e89)|
 
 ## ⚙️ Стек технологий
 
