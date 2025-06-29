@@ -7,7 +7,9 @@
 **Проект занял 1-е место в конкурсе НИРС.**
 **Приложение опубликовано в официальном магазине приложений RuStore.**
 
-[![Доступно в RuStore](https://github.com/user-attachments/assets/8f74942f-cf8c-4340-83d4-028ab1bdf2dd)](https://www.rustore.ru/catalog/app/com.example.tophistoryapp)
+<a href="https://www.rustore.ru/catalog/app/com.example.tophistoryapp">
+  <img src="https://cdn-www.rustore.ru/b2c-static-images/logo/RuStore_Badge_Monochrome_RUS.svg" alt="Доступно в RuStore" width="200">
+</a>
 
 
 ## 📱 Скриншоты
